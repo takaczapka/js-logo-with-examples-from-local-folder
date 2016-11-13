@@ -1,0 +1,8 @@
+cs
+to spiral :size 
+  if :size > 30 [stop] 
+  fd :size 
+  rt 15 
+  spiral :size *1.02 
+end
+spiral 1

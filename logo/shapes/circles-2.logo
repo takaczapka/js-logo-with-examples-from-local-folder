@@ -1,0 +1,7 @@
+cs
+repeat 12 [  
+  pu 
+  	setxy xcor + repcount ycor + repcount 
+  pd 
+  circle repcount * 20
+]

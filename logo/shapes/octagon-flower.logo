@@ -1,0 +1,8 @@
+cs
+for [i 10 80 5] [ 
+  repeat 5 [
+    repeat 8 [
+      fd :i rt 45
+    ] rt 72
+  ]
+]

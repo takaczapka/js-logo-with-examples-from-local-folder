@@ -1,0 +1,4 @@
+cs
+repeat 200 [ 
+  fd repcount * 2 rt 204 
+]

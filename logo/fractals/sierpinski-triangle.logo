@@ -1,0 +1,17 @@
+TO sierpinskitriangle.fractal :length :depth
+
+  if :depth = 0 [ stop ]
+
+  repeat 3 [
+      fd :length / 2
+	  rt 120
+      sierpinskitriangle.fractal :length / 2 :depth - 1
+      lt 120
+      fd :length / 2
+      rt 120
+  ]
+END
+
+cs
+rt 30
+sierpinskitriangle.fractal 300 7

@@ -1,0 +1,5 @@
+cs
+repeat 4 [
+  for [i 1 10]  [ square :i * 20 ]
+  rt 90
+]

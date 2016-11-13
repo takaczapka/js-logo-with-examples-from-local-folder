@@ -1,0 +1,12 @@
+cs
+for [i 4 30] [
+  cs
+  repeat :i [ 
+    pu
+      fd 50
+      rt 360 / :i
+    pd 
+    circle 100
+  ]
+  wait 10
+]

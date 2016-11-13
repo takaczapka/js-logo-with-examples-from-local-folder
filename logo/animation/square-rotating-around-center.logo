@@ -1,0 +1,24 @@
+TO square :length
+  repeat 4 [ fd :length rt 90 ]
+END
+
+TO draw_frame
+  pu lt 90 fd 50 lt 90 fd 50 rt 180 pd
+  square 100
+END
+
+; move of the position based on the parameter
+TO move_position :iteration
+  pu
+    home 
+    rt :iteration * 2
+  pd
+END
+
+cs
+forever [
+  move_position repcount
+  draw_frame
+  wait 1
+  clean
+]

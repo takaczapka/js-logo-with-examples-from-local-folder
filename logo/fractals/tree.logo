@@ -1,0 +1,22 @@
+; fractal with randomisation
+to tree.branch :length :depth :angle
+  if :depth = 0 or :length < 5 [stop]
+  
+  right :angle
+  forward :length
+  ; ten branches 
+  repeat 10 [
+      ; random angles of branches (spectrum of -90 to 90 degrees)
+      tree.branch :length / 1.9 :depth - 1 ((random 160) - 80)
+  ]
+  back :length
+  left :angle
+  
+end
+
+to tree :length :depth
+  tree.branch 100 :depth 0
+end
+
+cs
+tree 100 4

@@ -1,0 +1,7 @@
+cs
+for [i 1 120] [
+  cs
+  show :i
+  repeat :i [ rt 360 / :i square 100]
+  wait 10
+]

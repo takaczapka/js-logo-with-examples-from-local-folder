@@ -1,0 +1,2 @@
+cs
+for [i 1 30] [ circle :i * 20]

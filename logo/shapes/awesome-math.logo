@@ -1,0 +1,25 @@
+to awesome_math :x :y
+  repeat 360 [
+    setxy (sin(:x * repcount)) * 150 (sin(:y * repcount)) * 150
+  ]
+end
+
+to wait_and_reset
+  wait 60
+  cs
+end
+ 
+cs
+awesome_math 2 3
+
+wait_and_reset
+
+awesome_math 89 179
+
+wait_and_reset
+
+awesome_math 254 201
+
+wait_and_reset
+
+awesome_math 327 66

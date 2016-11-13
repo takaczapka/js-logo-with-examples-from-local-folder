@@ -1,0 +1,7 @@
+to polygon :edges repeat :edges [fd 50 rt 360/:edges] end
+
+repeat 20 [
+  cs
+  polygon repcount
+  wait 2
+]

@@ -1,0 +1,26 @@
+to snowflake.side :length :depth
+
+  if :depth = 0 [
+    fd :length
+    stop
+  ]
+
+  snowflake.side :length / 3 :depth - 1
+  left 60
+  snowflake.side :length / 3 :depth - 1
+  right 120
+  snowflake.side :length / 3 :depth - 1
+  left 60
+  snowflake.side :length / 3 :depth - 1
+
+end
+
+to snowflake :length :depth
+  repeat 3 [
+    snowflake.side :length :depth
+    right 120
+  ]
+end
+
+cs
+snowflake 200 4

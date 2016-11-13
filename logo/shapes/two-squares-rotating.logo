@@ -1,0 +1,17 @@
+to shape 
+  square 100
+  pu fd 110 rt 90 fd 110 lt 90 pd
+  square 20
+end
+
+home 
+cs
+; setpensize 10 - do it along with randomcolor 
+for [ i 1 120] [
+  ; randomcolor - to get some funky colors
+  pu 
+    home 
+    rt 3 * :i
+  pd
+  shape
+]

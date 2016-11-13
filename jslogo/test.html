@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+
+<div class="file">
+    <a id="fff" href="http://localhost:8080/animation/lib.logo">boom</a>
+    <a class="info_link" href="~/Resumes/Resumes1271354404687.docx">
+        ~/Resumes/Resumes1271354404687.docx
+    </a>
+</div>
+
+<script language="JavaScript">
+    $(function(){
+        $('.info_link').boom(function(event){
+            alert($(this).attr('href'));
+//            // or alert($(this).hash();
+        });
+    });
+</script>
+</body>
+</html>

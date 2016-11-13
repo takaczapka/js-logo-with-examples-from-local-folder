@@ -1,0 +1,2 @@
+cs
+for [i 99 -1]  [ setcolor random 15  repeat 8 [ fd :i rt 45] ]

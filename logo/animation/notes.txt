@@ -1,0 +1,27 @@
+
+1) clearscreen = cs - is a combination of "clean" and "home" commands
+
+2) repcount - is a current interation counter used in repeat or forever
+    i.e. repeat 10 [ show repcount ]
+
+3) animation routine pseudocode is following:
+
+  clearscreen	
+  forever/repeat [
+    move_position
+    draw_frame
+    wait 1
+    clean
+  ]
+
+4) "move_position" should be absolute - it shouldn't matter where "draw_frame" finished. It might take "repcount" or other parameter(s).
+
+	TO move_position :iteration
+	  home      ; reset the position
+	  rt :itearation * 2
+	END
+
+5) "draw_frame" cannot use absolute moves, so "home" or "setxy" are not allowed
+
+6) circles render in animation much better than any other figures (jslogo is just slow)
+ (check circles-rotating-*.logo examples)

@@ -1,0 +1,5 @@
+cs
+for [i 1 250] [ 
+  randomcolor
+  fd :i * 2 rt 204 
+]

@@ -1,0 +1,10 @@
+cs
+for [i 2 120] [
+  cs
+  lt 30
+  repeat :i [
+    diamond 100
+    rt 360 / :i
+  ]
+  wait 10
+]

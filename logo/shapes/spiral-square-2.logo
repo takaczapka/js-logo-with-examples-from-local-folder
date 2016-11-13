@@ -1,0 +1,4 @@
+cs
+repeat 185 [ 
+  fd repcount * 2 rt 91 
+]

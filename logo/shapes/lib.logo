@@ -1,0 +1,12 @@
+TO square :length
+  repeat 4 [ fd :length rt 90 ]
+END
+
+TO diamond :length 
+  fd :length rt 60 fd :length rt 120
+  fd :length rt 60 fd :length rt 120
+END
+
+TO circle :size
+  arc 360 :size
+END

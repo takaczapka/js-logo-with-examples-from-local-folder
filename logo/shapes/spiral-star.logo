@@ -1,0 +1,4 @@
+cs
+repeat 80 [ 
+  fd repcount * 5 rt 144
+]

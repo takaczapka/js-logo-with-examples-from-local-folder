@@ -1,0 +1,25 @@
+to crisscross :size :depth
+  if :depth = 0 [ stop ]
+  ; playing with colors
+  setpencolor :depth
+  repeat 4 [
+    forward :size / 2
+    crisscross :size / 3 :depth - 1
+    forward :size / 2
+
+    back :size
+
+    right 45
+    forward  :size
+    back :size
+    right 45
+  ]
+  setpencolor :depth + 1
+end
+
+to crisscrosspicture
+  crisscross 200 4
+end
+cs
+
+crisscrosspicture

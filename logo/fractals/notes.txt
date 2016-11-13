@@ -1,0 +1,24 @@
+1) Fractal - a geometrical figure (a drawing), where each part of which has the same character as the whole. They are useful in modelling structures (such as snowflakes) in which similar patterns recur at progressively smaller scales, and in describing partly random or chaotic phenomena such as crystal growth and galaxy formation.
+
+2) Fractal drawing routine is based on RECURSION
+
+  ; :length - size of the fractal unit (i.e. length of triangle or square)
+  ; :depth controlls how many "shapes in shapes" iterations should happen
+  TO fractal :length :depth
+    if :depth = 0 [stop] ; stop - exits the function call (like return in other languages)
+
+    draw_part_of_the_shape
+    ; recursial call, drawing the shape again but smaller (:lenght / Y)
+    fractal :length / Y :depth - 1 ; Y depends on the fractal 
+END
+
+cs
+fractal 100 5
+
+3) encourage use of "wait 30" to slower down the process of drawing to provide visual explanation of steps
+
+4) good occasion to introduce "if", "ifelse" and "stop" statements
+
+5) maybe start a lesson with "draw a snowflake" manually and then take it as a start for drawing fractals
+
+TBC 

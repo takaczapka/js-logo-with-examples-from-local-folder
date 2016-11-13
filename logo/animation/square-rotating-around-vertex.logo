@@ -1,0 +1,20 @@
+TO square :length
+  repeat 4 [ fd :length rt 90 ]
+END
+
+TO draw_frame
+  square 100
+END
+
+TO move_position :iteration
+  home
+  rt :iteration * 2
+END
+
+cs
+forever [
+  move_position repcount
+  draw_frame
+  wait 1
+  clean
+]

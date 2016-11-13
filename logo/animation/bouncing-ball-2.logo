@@ -1,0 +1,18 @@
+TO draw_frame
+  circle 30
+END
+
+TO move_position :iteration
+  pu
+    make "y (sin (:iteration * 10)) * 100
+    setxy 0 :y
+  pd
+END
+
+cs
+forever [
+  move_position repcount
+  draw_frame
+  wait 1
+  clean
+]

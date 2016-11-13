@@ -1,0 +1,9 @@
+TO snowflake_branch
+  repeat 3 [ fd 50 rt 45 fd 50 bk 50 left 45 fd 50 bk 50 left 45 fd 50 bk 50 rt 45 ] bk 150
+END
+
+cs
+repeat 9 [
+  snowflake_branch
+  rt 45
+]

@@ -1,0 +1,28 @@
+TO draw_frame
+  pu lt 90 fd 50 lt 90 fd 50 rt 180 pd
+  circle 100
+  pu
+  rt 90 fd 120
+  lt 90
+  pd
+  circle 10
+  pu 
+  fd 75
+  pd
+  circle 25 
+END
+
+TO move_position :iteration
+  pu
+    home                          
+    rt :iteration * 3
+  pd
+END
+
+cs
+forever [
+  move_position repcount
+  draw_frame
+  wait 1
+  clean
+]

@@ -1,0 +1,20 @@
+to snowflake.branch :length :depth
+  if :depth = 0 [stop]
+  repeat 3 [
+    fd :length
+    rt 45
+    snowflake.branch :length / 3 :depth - 1
+    lt 90
+    snowflake.branch :length / 3 :depth - 1
+    rt 45
+  ]
+  bk :length * 3
+end
+  to snowflake :length :depth
+   repeat 6 [
+    snowflake.branch :length :depth
+    rt 60
+  ]
+end
+  cs
+snowflake 50 4

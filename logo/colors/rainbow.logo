@@ -1,0 +1,10 @@
+cs
+lt 90
+setpensize 18
+for [c 1 100] [
+  for [i 1 10] [
+    setpencolor (:c + :i) % 15
+    arc 180 :i * 20
+  ]
+  wait 5
+]

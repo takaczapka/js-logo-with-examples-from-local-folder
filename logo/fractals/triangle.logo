@@ -1,0 +1,18 @@
+TO triangle.fractal :length :depth
+
+  if :depth = 0 [ stop ]
+
+  ; recursive case:
+  ; draw a triangle such that each side of
+  ; the triangle has TRIANGLE.FRACTAL in it.
+  repeat 3 [
+      fd :length / 3
+      triangle.fractal :length / 3 :depth - 1
+      fd :length / 3
+
+      rt 120
+  ]
+END
+
+cs
+triangle.fractal 300 4

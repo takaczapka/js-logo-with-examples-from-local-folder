@@ -1,0 +1,10 @@
+cs
+repeat 8 [ 
+  repeat 5 [
+    setwidth 1 
+    fd 10 
+    setwidth 3 
+    fd 10
+  ] 
+  lt 45 
+]

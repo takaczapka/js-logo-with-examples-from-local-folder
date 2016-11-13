@@ -1,0 +1,11 @@
+cs
+for [i 0 360 45 ] [
+  seth :i make "n 0 
+    repeat 80  [
+      setcolor pick [black green cyan magenta gray ] 
+      repeat 8 [ 
+        fd :n rt 45
+      ] 
+    make "n :n+1
+  ]
+]

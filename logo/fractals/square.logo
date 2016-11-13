@@ -1,0 +1,12 @@
+TO square.fractal :length :depth
+  if :depth = 0 [ stop ]
+  ; recursive case: draw a square such that each corner
+  ; of the square has square.fractal in it.
+  repeat 4 [
+    fd :length rt 90
+    square.fractal :length * 0.4 :depth - 1
+  ]
+END
+
+cs
+square.fractal 200 5

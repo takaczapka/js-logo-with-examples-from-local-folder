@@ -1,0 +1,7 @@
+cs 
+for [i 1 10]  [ 
+  bk  :i * 10 
+  lt 90 
+  fd :i * 10 
+  square :i * 20
+]

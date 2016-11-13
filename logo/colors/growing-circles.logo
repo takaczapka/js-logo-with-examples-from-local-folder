@@ -1,0 +1,10 @@
+cs
+repeat 100 [
+  for [i 1 120] [
+    cs
+    randomcolor     
+    arc 360 :i * 2 
+    fill
+    wait 1
+  ]
+]

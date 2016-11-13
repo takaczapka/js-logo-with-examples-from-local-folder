@@ -1,0 +1,9 @@
+cs
+repeat 5 [ 
+  pu fd 50 pd
+  circle 50
+  pu fd 50 pd
+  circle 100
+  pu bk 100
+  rt 72
+]

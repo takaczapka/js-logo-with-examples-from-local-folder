@@ -1,0 +1,8 @@
+
+cs
+cs repeat 200 [
+  repeat 8 [
+    fd 25 rt 100
+  ] 
+  fd 525 rt 14
+]

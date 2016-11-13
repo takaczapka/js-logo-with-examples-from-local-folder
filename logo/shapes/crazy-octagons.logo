@@ -1,0 +1,8 @@
+cs
+repeat 36 [ 
+  rt 10 
+  repeat 8 [ 
+    fd 50 
+    lt 45
+  ]
+]
