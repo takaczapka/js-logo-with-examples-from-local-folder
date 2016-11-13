@@ -1,6 +1,6 @@
-Start static files http server (https://www.npmjs.com/package/http-server) - it lets to serve static *logo* files from logo/ folder. 
+Start static files [http server](https://www.npmjs.com/package/http-server) - it lets *logo* files which live in *logo/* folder to be served at <http:localhost:8080>. 
 
-Start it with:
-> ./http-server/bin/http-server --cors logo
+Start it with: `./run.sh`.
 
-*jslogo* (https://github.com/inexorabletash/jslogo) is modified to show contents of folders served by *http-server* starting at *http://localhost:8080*. Open jslogo/index.html in browser (ideally Chrome).
+*jslogo* (https://github.com/inexorabletash/jslogo) is modified to show contents of folders served by *http-server* starting at *http://localhost:8080*. Open jslogo/index.html in browser (ideally Chrome): `open jslogo/index.html`.
+
